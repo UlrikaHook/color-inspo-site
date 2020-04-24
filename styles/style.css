@@ -211,10 +211,16 @@ section:first-of-type {
 
 
 .box{
-	display: flex;
+  display: flex;
+  justify-content: space-around;
 	flex-wrap: wrap;
 
+}
 
+.box .colorBox{
+  width: 6rem;
+  height: 6rem;
+}
 #red0 {
   background-color: red;
 }
