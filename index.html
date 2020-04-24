@@ -12,30 +12,27 @@
   </head>
 
   <body>
-    <input type="radio" id="white2" name="color2" checked />
-    <label for="white2">White</label>
+	  <label>Font color:</label>
+    <input type="radio" id="white" name="color" checked />
+    <label for="white">White</label>
 
-    <input type="radio" id="black2" name="color2" />
-    <label for="black2">Black</label>
+    <input type="radio" id="black" name="color" />
+    <label for="black">Black</label>
 
-    <input type="radio" id="gray2" name="color2" />
-    <label for="grey2">Grey</label>
+    <input type="radio" id="gray" name="color" />
+    <label for="gray">Grey</label>
 
     <header>
+		<div id="banner">Color inspirator</div>
       <nav>
-        vacker provisorisk navbar
+		  <a href="#red-container" id="red-link">Red</a>
+		  <a href="#green-container" id="green-link">Green</a>
+		  <a href="#blue-container" id="blue-link">Blue</a>
+		  <a href="#random-container" id="random-link">Random</a>
       </nav>
     </header>
 
     <section>
-      <input type="radio" id="white" name="color" checked />
-      <label for="white">White</label>
-
-      <input type="radio" id="black" name="color" />
-      <label for="black">Black</label>
-
-      <input type="radio" id="gray" name="color" />
-      <label for="grey">Grey</label>
 
       <div class="container">
         <div class="wholeBox">
@@ -83,10 +80,12 @@
       </div>
     </section>
 
-    <section>
-      <h1>Slumpade färger</h1>
+    <section id="random-container">
+	  <h1>Slumpade färger</h1>
+	  <hr>
       <button id="click">Nya färger</button>
       <section class="box">
+        <div class="colorBox"><p></p></div>
         <div class="colorBox"><p></p></div>
         <div class="colorBox"><p></p></div>
         <div class="colorBox"><p></p></div>
