@@ -94,24 +94,6 @@ section:first-of-type{
 }
 
 
-
-
-#black:checked ~ .container .colorBox p{
-	color:black;
-}
-
-#gray:checked ~ .container .colorBox p{
-	color:gray;
-}
-
-
-
-#white:checked ~ .container div div p{
-	color: white;
-}
-
-
-
 #black2:checked ~ section .container .colorBox p{
 	color: black;
 }
@@ -128,20 +110,54 @@ section:first-of-type{
 
 
 #red0{
-	background-color: red;
+	background-color: #f55045;
 }
-
 #red1{
-	background-color: pink;
+	background-color: #b81a2f;
 }
 #red2{
-	background-color: red;
+	background-color: #e80e2b;
 }
 #red3{
-	background-color: red;
+	background-color: #eb266e;
 }
 #red4{
-	background-color: pink;
+	background-color: #f7b5d2;
+}
+
+#green0{
+	background-color: #b4f7b2;
+}
+#green1{
+	background-color: #a0c29f;
+}
+#green2{
+	background-color: #14996d;
+}
+
+#green3{
+	background-color: #5dcfc1;
+}
+#green4{
+	background-color: #139183;
+}
+
+
+
+#blue0{
+	background-color: #319bb5;
+}
+#blue1{
+	background-color: #7ca7f2;
+}
+#blue2{
+	background-color: #6767b5;
+}
+#blue3{
+	background-color: #a7d2db;
+}
+#blue4{
+	background-color: #3d48db;
 }
 
 
