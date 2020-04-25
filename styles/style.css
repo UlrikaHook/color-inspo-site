@@ -186,7 +186,7 @@ header input[type="checkbox"] {
   background-image: url("https://images.unsplash.com/photo-1543857778-c4a1a3e0b2eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=953&q=80");
   height: 100vh;
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
