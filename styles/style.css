@@ -85,10 +85,9 @@ label:nth-of-type(4) {
   color: white;
 }
 
-nav{
+nav {
   margin-left: auto;
 }
-
 
 nav a {
   line-height: 75px;
@@ -126,36 +125,57 @@ nav a {
   border-bottom: 0.1rem solid white;
 }
 
-
-
-#hamburger-container{
+#hamburger-container {
   display: none;
   margin: auto 0;
   margin-left: auto;
 }
 
-header input[type="checkbox"]{
-  position:fixed;
-  left:79.7%;
-  top:1.2rem;
-  width:2rem;
-  height:2rem;
-  z-index:10;
-  opacity:0;
+header input[type="checkbox"] {
+  position: fixed;
+  left: 79.7%;
+  top: 1.2rem;
+  width: 2rem;
+  height: 2rem;
+  z-index: 10;
+  opacity: 0;
 }
 
-
-.hamburger{
-    width: 35px;
-    height: 5px;
-    background-color: white;
-    margin: 6px 0;
+.hamburger {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
   z-index: -3;
+}
 
+#intro {
+  padding-top: 2rem;
+  background-image: url("https://images.unsplash.com/photo-1543857778-c4a1a3e0b2eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=953&q=80");
+  height: 100vh;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#intro h1 {
+  color: black;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+#intro h3 {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 0 4rem;
 }
 
 section:first-of-type {
-  padding-top: 50px;
 }
 
 .containerHeader {
@@ -304,29 +324,25 @@ section:first-of-type {
     margin: 1rem;
   }
 
-
-  header nav{
+  header nav {
     margin: auto auto;
   }
 
   nav {
     display: none;
   }
- 
 
-  #hamburger-container{
+  #hamburger-container {
     display: block;
     position: absolute;
     left: 80%;
-    top:1rem;
+    top: 1rem;
   }
 
-  
-
   #chk:checked ~ nav {
-    margin-top:4.5rem;
+    margin-top: 4.5rem;
     padding: 0 1.4rem;
-    display:flex;
+    display: flex;
     flex-direction: column;
     background: rgba(0, 0, 0, 0.5);
   }
@@ -334,6 +350,18 @@ section:first-of-type {
   #banner {
     margin-top: 1rem;
     font-size: 2rem;
+  }
+
+  #intro {
+    height: 75vh;
+  }
+
+  #intro h1 {
+    font-size: 2.5em;
+  }
+
+  #intro h3 {
+    font-size: 1rem;
   }
 }
 
