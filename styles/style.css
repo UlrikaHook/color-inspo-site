@@ -14,21 +14,21 @@ header {
   position: fixed;
   width: 100%;
   height: 4.5rem;
-  display:flex;
+  display: flex;
   justify-content: space-between;
-  color: #f0eeee;
+  color: white;
 }
 
 #banner {
   font-size: 3rem;
   font-weight: 300;
-  letter-spacing:0.4rem;
+  letter-spacing: 0.4rem;
   margin-left: 1.5rem;
   display: inline-block;
 }
 
-input[type="radio"]:checked{
-	border: 5px solid #0DFF92;
+input[type="radio"]:checked {
+  border: 5px solid #0dff92;
 }
 
 input[type="radio"] {
@@ -43,8 +43,8 @@ label {
 }
 
 label:nth-of-type(1) {
-	left: 1.8rem;
-  }
+  left: 1.8rem;
+}
 
 input[type="radio"]:nth-of-type(1) {
   left: 7rem;
@@ -71,7 +71,7 @@ label:nth-of-type(4) {
 }
 
 #black:checked ~ section .container .colorBox p,
-#black:checked ~ section .box .colorBox p{
+#black:checked ~ section .box .colorBox p {
   color: black;
 }
 
@@ -85,34 +85,45 @@ label:nth-of-type(4) {
   color: white;
 }
 
-
-nav a {
-	line-height: 75px;
-	text-decoration: none;
-	color: white;
-	font-size: 1.4rem;
-	transition: border-bottom 0.15s ease-out;
-	margin-right: 1rem;
-	box-sizing: border-box;
+nav{
+  margin-left: auto;
 }
 
+
+nav a {
+  line-height: 75px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+  transition: border-bottom 0.15s ease-out;
+  box-sizing: border-box;
+  margin-right: 0.4rem;
+}
+
+#gray-link:hover,
+#gray-link:active {
+  border-bottom: 0.1rem solid gray;
+}
 
 #red-link:hover,
 #red-link:active {
-	border-bottom: 0.1rem solid red;
+  border-bottom: 0.1rem solid red;
 }
 #green-link:hover,
-#green-link:active{
-	border-bottom: 0.1rem solid green;
+#green-link:active {
+  border-bottom: 0.1rem solid green;
+}
+#yellow-link:hover,
+#yellow-link:active {
+  border-bottom: 0.1rem solid yellow;
 }
 #blue-link:hover,
-#blue-link:active{
-	border-bottom: 0.1rem solid blue;
+#blue-link:active {
+  border-bottom: 0.1rem solid blue;
 }
 #random-link:hover,
-#random-link:active{
-	border-bottom: 0.1rem solid white;
-
+#random-link:active {
+  border-bottom: 0.1rem solid white;
 }
 
 section:first-of-type {
@@ -147,21 +158,46 @@ section:first-of-type {
 }
 
 
-
-
-.wholeBox, .vertBox, .horizBox{
-	width: 400px;
-	height: 300px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 5px;
+#hamburger-container{
+  display: none;
+  margin: auto 0;
+  margin-left: auto;
 }
 
-.horizBox{
-	flex-direction: row;
-  	justify-content: space-between;
+header input[type="checkbox"]{
+  position:fixed;
+  left:79.7%;
+  top:1.2rem;
+  width:2rem;
+  height:2rem;
+  z-index:10;
+  opacity:0;
+}
 
+
+.hamburger{
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+  z-index: -3;
+
+}
+
+.wholeBox,
+.vertBox,
+.horizBox {
+  width: 400px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+.horizBox {
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .vertBox {
@@ -175,17 +211,16 @@ section:first-of-type {
   flex-wrap: wrap;
 }
 
-
-.colorBox{
-	color: white;
-	box-shadow: 2px 2px 2px rgba(0,0,0, 0.5);
-	display:flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 1.3rem;
-	font-weight: 300;
-	letter-spacing: 0.1rem;
-	border-radius:0.5rem;
+.colorBox {
+  color: white;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  border-radius: 0.5rem;
 }
 
 .colorBox:hover p {
@@ -197,22 +232,22 @@ section:first-of-type {
   width: 100%;
 }
 
-
-.vertBox .colorBox{
-	height: 48%;
-	width: 100%;
+.vertBox .colorBox {
+  height: 48%;
+  width: 100%;
 }
 
-
-.horizBox .colorBox{
-	height: 100%;
-	width: 48%;
+.horizBox .colorBox {
+  height: 100%;
+  width: 48%;
 }
+
 
 .box .colorBox{
   width: 195px;
   height: 195px;
   margin: 5px;
+
 }
 
 
@@ -235,32 +270,84 @@ footer{
   width: 100%;
 }
 
-
-
-@media only screen and (max-width: 1280px) and (min-width: 860px){
-	.container div:nth-of-type(3){
-		width: 800px;
-	}
+@media only screen and (max-width: 1280px) and (min-width: 860px) {
+  .container div:nth-of-type(3) {
+    width: 800px;
+  }
 }
 
-@media only screen and (max-width: 860px){
-	.vertBox, .wholeBox, .horizBox{
-		width: 100%;
+@media only screen and (max-width: 860px) {
+  .vertBox,
+  .wholeBox,
+  .horizBox {
+    width: 100%;
   }
   .box {
-   display: flex;
-   flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
   }
   .box div {
     height: 125px;
     width: 125px;
     margin: 1rem;
   }
+
+
+  header nav{
+    margin: auto auto;
+  }
+
+  nav {
+    display: none;
+  }
+ 
+
+  #hamburger-container{
+    display: block;
+    position: absolute;
+    left: 80%;
+    top:1rem;
+  }
+
+  
+
+  #chk:checked ~ nav {
+    margin-top:4.5rem;
+    padding: 0 1.4rem;
+    display:flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  #banner {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+
 }
 
+@media only screen and (max-width: 640px) {
+  .vertBox,
+  .wholeBox,
+  .horizBox {
+    width: 100%;
+  }
+  .box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .box div {
+    height: 125px;
+    width: 125px;
+    margin: 1rem;
+  }
 
-@media screen and (max-width:600px){
-	#banner{
-		font-size: 2rem;
-	}
+  nav {
+    display: none;
+  }
+
+  #banner {
+    margin-top: 1rem;
+    font-size: 4vw;
+  }
 }
