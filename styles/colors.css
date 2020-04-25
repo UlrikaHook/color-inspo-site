@@ -1,3 +1,12 @@
+
+#redContainer .containerHeader{
+	background: radial-gradient(
+		circle, 
+		rgba(204,0,0,1) 0%, 
+		rgba(255,255,255,1) 100%
+	);
+}
+
 #red0{
 	background-color: #f55045;
 }
@@ -12,6 +21,14 @@
 }
 #red4{
 	background-color: #f7b5d2;
+}
+
+#greenContainer .containerHeader{
+	background: radial-gradient(
+		circle, 
+		rgba(6,210,3,1) 0%, 
+		rgba(255,255,255,1) 100%
+	);
 }
 
 #green0{
@@ -31,7 +48,15 @@
 	background-color: #139183;
 }
 
+#blueContainer .containerHeader{
+	background: radial-gradient(
+		circle, 
+		rgba(16,6,195,1) 0%, 
+		rgba(247,249,250,1) 100%, 
+		rgba(255,255,255,0.9973739495798319) 100%
+	);
 
+}
 
 #blue0{
 	background-color: #319bb5;
@@ -49,6 +74,14 @@
 	background-color: #3d48db;
 }
 
+#yellowContainer .containerHeader{
+	background: radial-gradient(
+		circle, 
+		rgba(226,224,0,1) 0%, 
+		rgba(255,255,255,1) 100%
+	);
+}
+
 #yellow0{
 	background-color: #e5e8be;
 }
@@ -63,6 +96,16 @@
 }
 #yellow4{
 	background-color: #fce651;
+}
+
+#grayContainer .containerHeader{
+	background: radial-gradient(
+		circle, 
+		rgba(62,62,62,1) 0%, 
+		rgba(247,249,250,1) 100%, 
+		rgba(255,255,255,0.9973739495798319) 100%
+	);
+
 }
 
 #gray0{
@@ -82,4 +125,15 @@
 }
 #gray5{
 	background-color: #686869;
+}
+
+#random-container .containerHeader{
+	background: linear-gradient(
+		90deg, 
+		rgba(255,255,255,1) 0%,
+		rgba(238,3,115,1) 25%,  
+		rgba(29,214,253,1) 50%, 
+		rgba(226,252,69,1) 75%, 
+		rgba(255,255,255,1) 100%
+	);
 }

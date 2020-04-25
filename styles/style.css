@@ -125,7 +125,39 @@ nav a {
   border-bottom: 0.1rem solid white;
 }
 
-#hamburger-container {
+section:first-of-type {
+  padding-top: 70px;
+}
+
+
+.containerHeader{
+  width: 100%;
+  height: 7rem;
+  color: #f0eeee;
+	font-size: 2.5rem;
+  font-weight: 300;
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+.container{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	text-align: center;
+	flex-wrap: wrap;
+}
+
+
+#hamburger-container{
   display: none;
   margin: auto 0;
   margin-left: auto;
@@ -175,24 +207,6 @@ header input[type="checkbox"] {
   margin: 0 4rem;
 }
 
-section:first-of-type {
-}
-
-.containerHeader {
-  font-size: 2rem;
-  text-align: center;
-}
-
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  text-align: center;
-  flex-wrap: wrap;
-}
-
 .wholeBox,
 .vertBox,
 .horizBox {
@@ -212,6 +226,12 @@ section:first-of-type {
 .vertBox {
   flex-direction: column;
   justify-content: space-between;
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .colorBox {
@@ -245,61 +265,32 @@ section:first-of-type {
   width: 48%;
 }
 
-/*.container:nth-of-type(2) .vertBox{
-	order:1;
+
+.box .colorBox{
+  width: 195px;
+  height: 195px;
+  margin: 5px;
+
 }
 
-.container:nth-of-type(2) .horizBox{
-	order:2;
+
+#click{
+  margin: 10px;
+  padding: 5px;
 }
 
-.container:nth-of-type(2) .wholeBox{
-	order:3;
-}*/
 
-.box {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+hr{
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
-.box .colorBox {
-  width: 6rem;
-  height: 6rem;
-}
-#red0 {
-  background-color: red;
-}
-
-#red1 {
-  background-color: pink;
-}
-#red2 {
-  background-color: red;
-}
-#red3 {
-  background-color: red;
-}
-#red4 {
-  background-color: pink;
-}
-
-#random-container {
-  text-align: center;
-}
-
-#random-container h1 {
+footer{
   color: black;
-}
-#random-container hr {
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0.75),
-    rgba(0, 0, 0, 0)
-  );
+  text-align: center;
+  height: 5rem;
+  width: 100%;
 }
 
 @media only screen and (max-width: 1280px) and (min-width: 860px) {
@@ -352,17 +343,6 @@ section:first-of-type {
     font-size: 2rem;
   }
 
-  #intro {
-    height: 75vh;
-  }
-
-  #intro h1 {
-    font-size: 2.5em;
-  }
-
-  #intro h3 {
-    font-size: 1rem;
-  }
 }
 
 @media only screen and (max-width: 640px) {
