@@ -27,9 +27,7 @@ header {
   display: inline-block;
 }
 
-input[type="radio"]:checked {
-  border: 5px solid #0dff92;
-}
+
 
 input[type="radio"] {
   position: fixed;
@@ -273,6 +271,32 @@ header input[type="checkbox"] {
 #click {
   margin: 10px;
   padding: 5px;
+  width: 15%;
+  height: 2rem;
+  font-size: 1.5rem;
+  background: linear-gradient(
+		90deg, 
+		rgba(255,255,255,1) 0%,
+		rgba(238,3,115,1) 25%,  
+		rgba(29,214,253,1) 50%, 
+		rgba(226,252,69,1) 75%, 
+		rgba(255,255,255,1) 100%
+  );
+  border: none;
+  color: black;
+  text-transform:uppercase;
+  letter-spacing: 0.1rem;
+}
+
+#click:hover{
+  background: linear-gradient(
+		90deg, 
+		rgba(255,255,255,1) 0%,
+		rgba(226,252,69,1) 25%,  
+		rgba(29,214,253,1) 50%, 
+		rgba(238,3,115,1) 75%, 
+		rgba(255,255,255,1) 100%
+  );
 }
 
 hr {
