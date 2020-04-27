@@ -140,8 +140,8 @@ section:first-of-type {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 
@@ -152,8 +152,8 @@ section:first-of-type {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	text-align: center;
 	flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 
@@ -232,6 +232,7 @@ header input[type="checkbox"] {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 .colorBox {
@@ -283,7 +284,12 @@ header input[type="checkbox"] {
 hr{
     border: 0;
     height: 2px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(
+      to right, 
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.75), 
+      rgba(0, 0, 0, 0)
+      );
 }
 
 footer{
@@ -297,22 +303,21 @@ footer{
   .container div:nth-of-type(3) {
     width: 800px;
   }
+
+  .box .colorBox{
+    flex-basis: 30%;
+  }
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 859px) {
   .vertBox,
   .wholeBox,
   .horizBox {
-    width: 100%;
+    width: 200px;
   }
-  .box {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .box div {
-    height: 125px;
-    width: 125px;
-    margin: 1rem;
+
+  .box .colorBox {
+    flex-basis: 30%;
   }
 
   header nav {
@@ -345,20 +350,13 @@ footer{
 
 }
 
-@media only screen and (max-width: 640px) {
-  .vertBox,
-  .wholeBox,
-  .horizBox {
-    width: 100%;
+@media only screen and (max-width: 650px) {
+  .container div:nth-of-type(3) {
+    width: 400px;
   }
-  .box {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .box div {
-    height: 125px;
-    width: 125px;
-    margin: 1rem;
+
+  .box .colorBox {
+    flex-basis: 40%;
   }
 
   nav {
