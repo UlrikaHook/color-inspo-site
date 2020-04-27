@@ -5,7 +5,6 @@ body {
 }
 
 header {
-  background: rgb(238, 174, 202);
   background: radial-gradient(
     circle,
     rgba(238, 174, 202, 1) 0%,
@@ -27,13 +26,13 @@ header {
   display: inline-block;
 }
 
-
-
+/*Buttons to change text color*/
 input[type="radio"] {
   position: fixed;
   top: 3.2rem;
   z-index: 1;
 }
+
 label {
   position: fixed;
   top: 3.2rem;
@@ -83,6 +82,7 @@ label:nth-of-type(4) {
   color: white;
 }
 
+/*Standard navbar and hidden hamburger navbar*/
 nav {
   margin-left: auto;
 }
@@ -123,30 +123,6 @@ nav a {
   border-bottom: 0.1rem solid white;
 }
 
-.containerHeader {
-  width: 100%;
-  height: 7rem;
-  color: #f0eeee;
-  font-size: 2.5rem;
-  font-weight: 300;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
-  margin-bottom: 30px;
-}
-
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  flex-wrap: wrap;
-  margin-bottom: 50px;
-}
-
 #hamburger-container {
   display: none;
   margin: auto 0;
@@ -172,6 +148,7 @@ header input[type="checkbox"] {
   z-index: -3;
 }
 
+/*Intro section*/
 #intro {
   padding-top: 2rem;
   background-image: url("https://images.unsplash.com/photo-1543857778-c4a1a3e0b2eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=953&q=80");
@@ -197,6 +174,31 @@ header input[type="checkbox"] {
   font-size: 1.5rem;
   font-weight: 300;
   margin: 0 4rem;
+}
+
+/*Content of the site, color boxes*/
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.containerHeader {
+  width: 100%;
+  height: 7rem;
+  color: #f0eeee;
+  font-size: 2.5rem;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 .wholeBox,
@@ -264,6 +266,7 @@ header input[type="checkbox"] {
   margin: 5px;
 }
 
+/*Button for changing colors in random section*/
 #click {
   margin: 10px;
   padding: 5px;
@@ -313,6 +316,7 @@ footer {
   width: 100%;
 }
 
+/*Responsiveness of color boxes when screen between 860 and 1280px */
 @media only screen and (max-width: 1280px) and (min-width: 860px) {
   .container div:nth-of-type(3) {
     width: 800px;
@@ -323,6 +327,8 @@ footer {
   }
 }
 
+/*Responsiveness of color boxes and banner when screen up to 860px
+  Change from standard navbar til hamburger navbar*/
 @media only screen and (max-width: 859px) {
   .vertBox,
   .wholeBox,
@@ -365,10 +371,9 @@ footer {
     margin-top: 1rem;
     font-size: 2rem;
   }
-
-
 }
 
+/*Responsiveness of color boxes and banner when screen up to 650px*/
 @media only screen and (max-width: 650px) {
   .container div:nth-of-type(3) {
     width: 400px;
@@ -376,10 +381,6 @@ footer {
 
   .box .colorBox {
     flex-basis: 40%;
-  }
-
-  nav {
-    display: none;
   }
 
   #banner {

@@ -1,4 +1,4 @@
-
+/*All the added colors for color boxes*/
 #redContainer .containerHeader{
 	background: radial-gradient(
 		circle, 
@@ -42,10 +42,10 @@
 }
 
 #greenContainer .containerHeader{
-	background: radial-gradient(
-		circle, 
-		rgba(6,210,3,1) 0%, 
-		rgba(255,255,255,1) 100%
+background: radial-gradient(
+	circle, 
+	rgba(16,219,114,1) 0%, 
+	rgba(255,255,255,1) 100%
 	);
 }
 

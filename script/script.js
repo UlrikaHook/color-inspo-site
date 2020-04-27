@@ -1,7 +1,7 @@
 
 //********************
 //KOD FÖR ATT SLUMPA FRAM FÄRGER */
-//välj alla divs inne i klassen box
+//välj alla divs inne i sektion med id randomBox
 const boxes = document.querySelectorAll("#randomBox .colorBox");
 
 const getRandomColor = () => {
