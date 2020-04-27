@@ -123,10 +123,6 @@ nav a {
   border-bottom: 0.1rem solid white;
 }
 
-section:first-of-type {
-  padding-top: 70px;
-}
-
 .containerHeader {
   width: 100%;
   height: 7rem;
