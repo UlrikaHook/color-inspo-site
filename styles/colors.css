@@ -8,19 +8,37 @@
 }
 
 #red0{
-	background-color: #f55045;
+	background-color: #ff0000;
 }
 #red1{
-	background-color: #b81a2f;
+	background-color: #a60040;
 }
 #red2{
-	background-color: #e80e2b;
+	background-color: #ff5100;
 }
 #red3{
 	background-color: #eb266e;
 }
 #red4{
 	background-color: #f7b5d2;
+}
+#red5{
+	background-color: #ff6b6b;
+}
+#red6{
+	background-color: #ed5353;
+}
+#red7{
+	background-color: #db3b3b;
+}
+#red8{
+	background-color: #cf2323;
+}
+#red9{
+	background-color: #bf1111;
+}
+#red10{
+	background-color: #b30000;
 }
 
 #greenContainer .containerHeader{
@@ -32,7 +50,7 @@
 }
 
 #green0{
-	background-color: #b4f7b2;
+	background-color: #0ee383;
 }
 #green1{
 	background-color: #a0c29f;
@@ -46,6 +64,25 @@
 }
 #green4{
 	background-color: #139183;
+}
+#green5{
+	background-color: #baf7be;
+}
+
+#green6{
+	background-color: #7dd183;
+}
+#green7{
+	background-color: #51ad58;
+}
+#green8{
+	background-color: #2d8c34;
+}
+#green9{
+	background-color: #126b19;
+}
+#green10{
+	background-color: #014a07;
 }
 
 #blueContainer .containerHeader{
@@ -62,7 +99,7 @@
 	background-color: #319bb5;
 }
 #blue1{
-	background-color: #7ca7f2;
+	background-color: #b1e2fc;
 }
 #blue2{
 	background-color: #6767b5;
@@ -73,6 +110,25 @@
 #blue4{
 	background-color: #3d48db;
 }
+#blue5{
+	background-color: #808eff;
+}
+#blue6{
+	background-color: #5b6ae3;
+}
+#blue7{
+	background-color: #3a49c2;
+}
+#blue8{
+	background-color: #1e2c9e;
+}
+#blue9{
+	background-color: #0c1a87;
+}
+#blue10{
+	background-color: #000c69;
+}
+
 
 #yellowContainer .containerHeader{
 	background: radial-gradient(
@@ -86,18 +142,35 @@
 	background-color: #e5e8be;
 }
 #yellow1{
-	background-color: #f5fc90;
+	background-color: #eaff80;
 }
 #yellow2{
-	background-color: #f0dd30;
+	background-color: #f2e338;
 }
 #yellow3{
-	background-color: #fbff2b;
+	background-color: #d4cf4a;
 }
 #yellow4{
 	background-color: #fce651;
 }
-
+#yellow5{
+	background-color: #fffee3;
+}
+#yellow6{
+	background-color: #fffec9;
+}
+#yellow7{
+	background-color: #fffd99;
+}
+#yellow8{
+	background-color: #fffc73;
+}
+#yellow9{
+	background-color: #fcf726;
+}
+#yellow10{
+	background-color: #e6e002;
+}
 #grayContainer .containerHeader{
 	background: radial-gradient(
 		circle, 
